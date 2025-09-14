@@ -48,9 +48,9 @@ const AboutUs = () => {
               />
             </div>
             <div className={styles.halalInfo}>
-              <p>
+              {/* <p>
                 Dengan ini, kami menyatakan bahwa <strong>PT. KREPS ISTIMEWA NUSANTARA</strong> telah memperoleh sertifikat halal dari Majelis Ulama Indonesia (MUI) atau lembaga sertifikasi halal yang diakui, yang berlaku untuk produk-produk kami.
-              </p>
+              </p> */}
               <div className={styles.certificateDetails}>
                 <p>
                   <strong>Nomor Sertifikat Halal:</strong> <span className={styles.highlight}>ID3311001234567890</span>
@@ -62,13 +62,13 @@ const AboutUs = () => {
             </div>
           </div>
 
-          <p className={styles.commitmentText}>
+          {/* <p className={styles.commitmentText}>
             Kami berkomitmen untuk terus menjaga kualitas produk kami dan memastikan bahwa semua produk yang kami tawarkan aman, berkualitas, dan sesuai dengan prinsip-prinsip halal.
-          </p>
+          </p> */}
 
           <div className={styles.teamImageContainer}>
             <Image
-              src="/images/team1.webp" 
+              src="/images/group.jpg" 
               alt="Tim Kreps Istimewa"
               layout="fill"
               objectFit="cover"
