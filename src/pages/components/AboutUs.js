@@ -9,7 +9,7 @@ const AboutUs = () => {
       {/* 1. DIV UNGU */}
       <div className={styles.aboutHeader}>
         <div className={styles.headerContent}>
-          <h2 className={styles.title}>TENTANG KAMI</h2>
+          <h2 className={styles.title}>TENTANG <span>KAMI</span></h2>
           <div className={styles.brandInfo}>
             <span>BOX CREPES</span>
           </div>

@@ -19,7 +19,7 @@
 }
 
 .headerContent {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
   padding-top: 70px; 
   display: flex;
@@ -30,11 +30,14 @@
 }
 
 .title {
-  font-family: var(--font-heading);
+  font-family: var(--font-body);
   font-size: 2.5rem;
   font-weight: 700;
-  letter-spacing: 2px;
-  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.title span{
+  font-weight: 100;
 }
 
 .brandInfo {
@@ -72,7 +75,7 @@
 
 .crepesLogoAbsolute {
   position: absolute;
-  top: -40px; 
+  top: -50px; 
   left: 50%;
   transform: translateX(-50%);
   background-color: white;
@@ -95,6 +98,8 @@
   margin: 0 0 1rem 0;
   line-height: 1.7;
   font-size: 1.05rem;
+  text-align: center;
+  font-weight: bold;
 }
 .storyCard p:last-child {
   margin-bottom: 0;
