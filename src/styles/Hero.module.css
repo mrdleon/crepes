@@ -1,5 +1,3 @@
-/* src/styles/Hero.module.css */
-
 .heroSection {
   min-height: 100vh;
   display: flex;
@@ -32,14 +30,13 @@
 
 /* ===== MODIFIKASI TOTAL HEXAGON SEMPURNA ===== */
 .imageHexagonWrapper {
-  width: 400px; /* Kita hanya perlu menentukan lebarnya */
+  width: 400px; 
   aspect-ratio: 1 / 1; /* Membuat rasio lebar dan tinggi menjadi 1:1 (persegi) */
   position: relative; /* Diperlukan untuk menampung gambar di dalamnya */
   
   /* Bentuk heksagon menggunakan clip-path */
   /* clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); */
   
-  /* Hapus background-color, biarkan gambar yang mengisi */
   box-shadow: 0 15px 40px -10px rgba(138, 43, 226, 0.2);
 
   filter: drop-shadow(0 0 0 4px var(--primary-purple));
@@ -83,7 +80,6 @@
   border-radius: 50%;
 }
 
-/* ... (sisa kode .textContainer, .headline, dll. tetap sama) ... */
 .textContainer {
   flex: 1;
   display: flex;
@@ -156,7 +152,7 @@
     font-size: 3.5rem;
   }
   .imageHexagonWrapper {
-    width: 350px; /* Cukup atur lebarnya, tinggi akan mengikuti */
+    width: 350px;
   }
   .logoHexagon {
     width: 100px;
@@ -186,7 +182,7 @@
     font-size: 2.2rem;
   }
   .imageHexagonWrapper {
-    width: 280px; /* Perkecil lagi, tinggi otomatis menyesuaikan */
+    width: 280px;
   }
   .logoHexagon {
     width: 80px;

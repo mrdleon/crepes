@@ -1,5 +1,3 @@
-/* Features.module.css (revisi responsif & image fixes) */
-
 .featuresSectionWrapper {
   background-color: var(--bg-main);
 }
@@ -84,15 +82,13 @@
   position: relative;
 }
 
-/* PRODUCT IMAGE - desktop: absolute (visually overlapping),
-   but on smaller screens it becomes relative + centered */
 .productImage {
   position: absolute;
   top: 30px;
   left: 0;
   z-index: 10;
   line-height: 0;
-  /* limit desktop size so it won't explode on medium screens */
+
   width: 520px;
   max-width: 48%;
 }
@@ -103,7 +99,6 @@
   object-fit: contain;
 }
 
-/* when productImage used inside productBlock (non-overlapping sections) */
 .productBlock .productImage {
   position: relative;
   line-height: 0;
@@ -111,7 +106,6 @@
   flex-shrink: 0;
 }
 
-/* text content */
 .textContent {
   flex-basis: 50%;
   text-align: left;
@@ -119,7 +113,6 @@
   z-index: 1;
 }
 
-/* lower content */
 .lowerContentWrapper {
   max-width: 1100px;
   margin: 0 auto;
@@ -159,7 +152,6 @@
   text-align: left;
 }
 
-/* price bubble */
 .priceBubble {
   position: absolute;
   bottom: 20px;
@@ -183,7 +175,6 @@
   font-size: 1.8rem;
 }
 
-/* order button */
 .orderButton {
   background-color: var(--primary-purple);
   color: var(--text-light);
@@ -203,9 +194,7 @@
   box-shadow: 0 8px 20px rgba(138, 43, 226, 0.3);
 }
 
-/* =========================
-   RESPONSIVE (IMPROVED)
-   ========================= */
+/* RESPONSIVE */
 
 /* TABLET (<= 1024px) */
 @media (max-width: 1024px) {
@@ -222,7 +211,6 @@
     gap: 1rem;
   }
 
-  /* Product image becomes relatively sized (no overflow) */
   .productImage {
     position: relative;
     top: auto;
@@ -250,8 +238,8 @@
   }
 }
 
-/* MOBILE (<= 768px) - stack layout, center images & text */
-/* MOBILE (<= 768px) - stack layout, center images & text */
+/* MOBILE (<= 768px) */
+
 @media (max-width: 768px) {
   .featuresSection {
     border-radius: 0 0 12% 12%;
@@ -279,14 +267,12 @@
     height: auto;
   }
 
-  /* stack the bottom block */
   .bottomBlock {
     flex-direction: column;
     text-align: center;
     gap: 2rem;
   }
 
-  /* Make product image center, smaller and prevent overflow */
   .productImage {
     position: relative;
     width: 360px;
@@ -294,7 +280,7 @@
     margin: 0 auto;
     top: auto;
     left: auto;
-    order: -1; /* show image before text on small screens for visual balance */
+    order: -1; 
   }
   .productImage img {
     width: 100%;
@@ -347,7 +333,6 @@
     margin-bottom: 0;
   }
 
-  /* === Tambahan untuk text rata tengah & jarak === */
   .textContent {
     text-align: center;
     margin: 0 auto;
@@ -363,7 +348,7 @@
 }
 
 
-/* MOBILE LANDSCAPE (<= 480px) - tighten further */
+/* MOBILE LANDSCAPE (<= 480px) */
 @media (max-width: 480px) {
   .contentContainer {
     padding: 2rem 1rem;
@@ -373,13 +358,13 @@
   .headlineDark {
     font-size: 1.8rem;
     line-height: 1.3;
-    margin-bottom: 0.8rem; /* jarak headline */
+    margin-bottom: 0.8rem; 
   }
 
   .subheading,
   .subheadingDark {
     font-size: 1rem;
-    margin-bottom: 1.5rem; /* jarak subheading */
+    margin-bottom: 1.5rem;
   }
 
   .halalLogo {
@@ -391,7 +376,6 @@
     height: auto;
   }
 
-  /* further reduce images */
   .productImage {
     width: 280px;
     max-width: 90%;

@@ -1,6 +1,3 @@
-/* src/styles/animations.module.css */
-
-/* State awal: elemen disembunyikan */
 .hidden {
   opacity: 0;
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;

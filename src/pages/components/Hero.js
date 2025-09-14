@@ -5,11 +5,10 @@ import styles from '@/styles/Hero.module.css';
 const Hero = () => {
   return (
     <>
-      {/* ===== DEFINISI BENTUK SVG YANG DISEMPURNAKAN ===== */}
       <svg width="0" height="0" style={{ position: 'absolute' }}>
         <defs>
           <clipPath id="rounded-hexagon" clipPathUnits="objectBoundingBox">
-            {/* Path ini sudah diperbaiki agar semua 6 sudutnya tumpul sempurna */}
+            {/* hexagon*/}
             <path d="
               M0.45 0.04 
               Q0.50 0.00 0.55 0.04 

@@ -187,10 +187,10 @@
   .storyCard {
     margin: -150px 5% 0 5%;
   }
-  .teamImageContainer { /* Atur tinggi untuk gambar tim */
+  .teamImageContainer { 
     height: 60vh;
   }
-  .kertas { /* Pastikan kertas juga mengikuti tinggi yang sama */
+  .kertas { 
     height: 60vh;
   }
 }
@@ -229,12 +229,12 @@
   .halalInfo {
     text-align: center;
   }
-  .teamImageContainer { /* Atur tinggi untuk gambar tim */
+  .teamImageContainer { 
     height: 65vh;
     border-radius: 0;
     margin-top: 3rem;
   }
-  .kertas { /* Pastikan kertas juga mengikuti tinggi yang sama */
+  .kertas { 
     height: 8vh;
     border-radius: 0;
     margin-top: 3rem;
@@ -251,10 +251,10 @@
     height: 150px;
   }
   .teamImageContainer, .kertas {
-    height: 60vh; /* Sedikit lebih pendek untuk layar sangat kecil */
+    height: 60vh; 
   }
 
   .kertas {
-    height: 8vh; /* Sedikit lebih pendek untuk layar sangat kecil */
+    height: 8vh; 
   }
 }

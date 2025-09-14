@@ -23,10 +23,8 @@ export default function HomePage() {
         <AboutUs />
       </SlideIn>
 
-      <SlideIn direction="up">
         <Features />
-      </SlideIn>
-
+      
       <SlideIn direction="right">
         <Call />
       </SlideIn>
