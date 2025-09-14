@@ -30,17 +30,17 @@ const Features = () => {
 
             <h2 className={styles.headline}>GABUNG SEKARANG</h2>
             <p className={styles.subheading}>
-              Dapatkan berbagai benefit dan promo menarik yuk <br/> join bersama kami dan dapatkan free bahan baku diawal <br/>serta keuntungan 100% milik mitra.
+              Dapatkan berbagai benefit dan free bahan baku diawal <br/>
             </p>
           </div>
 
           <div className={styles.bottomBlock}>
             <div className={styles.productImage}>
               <Image
-                src="/images/anggur.png"
+                src="/images/maskot.png"
                 alt="Produk Unggulan Box Crepes"
-                width={350}
-                height={350}
+                width={650}
+                height={450}
                 style={{ objectFit: 'contain' }}
               />
             </div>
@@ -58,9 +58,9 @@ const Features = () => {
       <div className={styles.lowerContentWrapper}>
         <div className={styles.royaltyBlock}>
           <div className={styles.textContent}>
-            <h2 className={styles.headlineDark}>BEBAS ROYALTY</h2>
+            <h2 className={styles.headlineDark}>BEBAS ROYALTY FREE</h2>
             <p className={styles.subheadingDark}>
-              Cukup bayar di depan, selanjutnya usaha milik mitra.
+              Keuntungan <b>100%</b> milik mitra.
             </p>
           </div>
           <div className={styles.halalLogoSide}>
@@ -71,7 +71,7 @@ const Features = () => {
         <div className={styles.productBlock}>
           <div className={styles.productImage}>
             <Image
-              src="/images/strawbery.png" 
+              src="/images/ko.png" 
               alt="Produk Unggulan Box Crepes"
               width={350}
               height={450}
@@ -79,12 +79,36 @@ const Features = () => {
             />
           </div>
           <div className={styles.textContent}>
-            <h2 className={styles.headlineDark}>OUR PRODUCT</h2>
+            <h2 className={styles.headlineDark}>SOP LENGKAP, JELAS, DAN TERTATA</h2>
             <p className={styles.subheadingDark}>
-              Crêpes dengan adonan renyah, manis, dan gurih disajikan dengan berbagai topping premium pilihan Anda.
+              Standar operasional prosedur mudah diikuti dan dijalankan.
             </p>
           </div>
         </div>
+
+
+         <div className={styles.productBlock}>
+          
+          <div className={styles.textContent}>
+            <h2 className={styles.headlineDark}>DESIGN BOOTH YANG EYE CATCHING & MUDAH DIPINDAHKAN</h2>
+            <p className={styles.subheadingDark}>
+              Booth yang mudah dibawa kemana aja dan ringkas untuk penyimpanan barang.
+            </p>
+          </div>
+
+          <div className={styles.productImage}>
+            <Image
+              src="/images/booth.png" 
+              alt="Produk Unggulan Box Crepes"
+              width={350}
+              height={450}
+              style={{ objectFit: 'cover', borderRadius: '20px' }}
+            />
+          </div>
+        </div>
+
+        
+
       </div>
     </div>
   );

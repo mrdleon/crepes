@@ -24,15 +24,17 @@
 
 .headline {
   font-family: 'Poppins', sans-serif;
-  font-size: 2.5rem; 
+  font-size: 4.5rem; 
   font-weight: 700;
-  line-height: 1.2;
+  text-align: center;
+  line-height: 1;
   margin-bottom: 1rem;
 }
 
 .subheading {
   font-size: 1.1rem;
   line-height: 1.7;
+  text-align: center;
   opacity: 0.9; 
 }
 
@@ -63,18 +65,24 @@
 .bottomBlock {
   display: flex;
   align-items: center;
-  gap: 2rem;
-  text-align: left;
+  justify-content: flex-end; /* teks ke kanan */
+  position: relative; /* supaya productImage bisa absolute di dalam sini */ 
 }
 
 .productImage {
-  flex-basis: 50%; /* Mengambil 50% lebar */
-  flex-shrink: 0;
+  position: absolute;
+  top: 30px;   /* atur seberapa tinggi gambar nimpa */
+  left: 0;      /* bisa geser kiri-kanan sesuai mau */
+  z-index: 10;
 }
 
 .textContent {
-  flex-basis: 50%; /* Mengambil 50% lebar */
+  flex-basis: 50%;
+  text-align: left;
+  margin-right: 6rem;
+  z-index: 1; /* pastikan tetap muncul */
 }
+
 
 /* baru */
 .lowerContentWrapper {
@@ -84,11 +92,13 @@
 }
 
 .headlineDark {
+  margin-top: 6rem;
   font-family: 'Poppins', sans-serif;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1rem;
+  /* background-color: #8a2be2; */
   color: var(--text-dark); 
 }
 
@@ -99,18 +109,19 @@
 }
 
 .royaltyBlock {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto; /* text di kiri, logo di kanan */
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   text-align: left;
   margin-bottom: 5rem;
 }
 
+
 .productBlock {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   text-align: left;
 }
 
