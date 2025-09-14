@@ -32,18 +32,28 @@ const Hero = () => {
             Box Crepes, Lejat dan bergiji
           </h1>
           <p className={styles.slogan}>
-            #ManisGurihSemuaSuka
+            #ManisGurihSemuaSuka<br/>
             #KrepsIstimewa
           </p>
           <div className={styles.ctaBlock}>
-            <h2>Pesan Crepes Favoritmu Sekarang!</h2>
-            <button className={styles.ctaButton}>Lihat Menu</button>
+            <h2>PELUANG USAHA TERBAIK, TERJANGKAU & TERLARIS!!</h2>
+            {/* <button className={styles.ctaButton}>Lihat Menu</button> */}
             <div className={styles.socials}>
               <a href="https://instagram.com/krepsistimewa" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>
-                <i className="fab fa-instagram"></i> instagram.com/box_crepes
+                <i className="fab fa-instagram"></i> 
+              </a>
+              <a href="https://instagram.com/krepsistimewa" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>
+                <i className="fab fa-tiktok"></i> 
+              </a>
+              <a href="https://instagram.com/krepsistimewa" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>
+                <i className="fab fa-facebook"></i> @box_crepes
+              </a>
+              <a href="https://instagram.com/krepsistimewa" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>
+                <i className="fas fa-globe"></i>  www.crepes.my.id
               </a>
             </div>
           </div>
+
         </div>
       </div>
     </section>

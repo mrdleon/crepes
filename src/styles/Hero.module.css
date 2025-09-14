@@ -30,18 +30,51 @@
   padding-left: 60px;
 }
 
-/* Styling Hexagon (Segi Enam) */
+.heroSection {
+  padding: 4rem 2rem;
+  background: #fff;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.imageAndLogoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* 🔹 Hexagon besar dengan rounded */
 .imageHexagonWrapper {
-  width: 400px; /* Sesuaikan ukuran keseluruhan hexagon */
-  height: 400px; /* Sesuaikan ukuran keseluruhan hexagon */
-  background-color: #f0f0f0; 
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  width: 400px;
+  height: 400px;
+  background-color: #f0f0f0;
+  clip-path: polygon(
+    50% 0%, 
+    100% 25%, 
+    100% 75%, 
+    50% 100%, 
+    0% 75%, 
+    0% 25%
+  );
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden; 
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); /* Bayangan */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+
+  /* 🔹 Tambahan biar nggak lancip */
+  border-radius: 24px; 
 }
+
+
+
+
 
 .imageHexagonWrapper img {
   width: 100%; /* Gambar mengisi seluruh wrapper */
@@ -87,19 +120,36 @@
 }
 
 .slogan {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
+  font-weight: 900;
   color: var(--text-dark);
   opacity: 0.8;
   margin-bottom: 2rem;
+  font-style: italic;
+  line-height: 1.5; /* biar rapi */
+  white-space: pre-line; /* hormati line break dari HTML */
 }
 
+
 .ctaBlock {
-  background-color: white;
-  padding: 1.5rem 2rem;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-  text-align: center;
+  background-color: #fff;
+  padding: 2rem 2.5rem;
+  border-radius: 16px; /* sudut rounded */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  /* text-align: center; */
+  max-width: 500px;
 }
+
+.ctaHeadline {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #008238; /* hijau brand, sesuaikan */
+  text-transform: uppercase;
+  margin: 0 0 1.5rem 0;
+  line-height: 1.2;
+}
+
 
 .ctaBlock h2 {
   font-family: 'Poppins', sans-serif;
@@ -129,21 +179,27 @@
   margin-top: 1.5rem;
   font-size: 0.9rem;
   opacity: 0.9;
+
+  display: flex;           /* atur kontainer jadi flex */
+  align-items: center;
+  gap: 0.7rem;               /* jarak antar icon/link */
+  flex-wrap: wrap;         /* kalau kepanjangan, turun ke baris baru */
 }
 
 .socialIcon {
-  display: flex;
+  display: inline-flex;    /* biar icon + teks tetap sejajar */
   align-items: center;
-  justify-content: center;
   gap: 0.5rem;
   color: var(--text-dark);
   font-weight: 600;
+  text-decoration: none;   /* hilangin underline */
 }
 
 .socialIcon i {
   font-size: 1.2rem;
   color: #E1306C; 
 }
+
 
 /* Media Query */
 @media (max-width: 768px) {
