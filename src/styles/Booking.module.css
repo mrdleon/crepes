@@ -1,0 +1,90 @@
+.bookingSection {
+  background-color: var(--bg-main);
+  padding: 5rem 1rem 0 1rem; 
+  overflow: hidden;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center; 
+}
+
+.titleWrapper {
+  text-align: center;
+  margin-bottom: 3rem; 
+}
+
+.title {
+  font-family: var(--font-nunito);
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  padding: 0.75rem 1.5rem;
+  background-color: #EDE1FF;
+  display: inline-block;
+  border-radius: 12px;
+  margin-bottom: 0; 
+}
+
+.termsList {
+  list-style: none;
+  counter-reset: terms-counter;
+  padding-left: 0;
+  font-size: 1.1rem;
+  line-height: 2;
+  color: var(--text-dark);
+  text-align: left; 
+}
+
+.termsList li {
+  counter-increment: terms-counter; /* Tambah 1 setiap item */
+  margin-bottom: 1rem;
+  padding-left: 3rem;
+  position: relative;
+  
+}
+
+.termsList li::before {
+  content: counter(terms-counter) ".";
+  position: absolute;
+  left: 0;
+  font-family: var(--font-nunito);
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: var(--primary-purple);
+}
+
+/* BAGIAN GAMBAR */
+.imageSection {
+  position: relative;
+  margin-top: 4rem;
+}
+
+.waveDivider {
+  width: 100%;
+  height: 100px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3e%3cpath fill='%238A2BE2' fill-opacity='1' d='M0,160L48,181.3C96,203,192,245,288,250.7C384,256,480,224,576,197.3C672,171,768,149,864,154.7C960,160,1056,192,1152,197.3C1248,203,1344,181,1392,170.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z'%3e%3c/path%3e%3c/svg%3e");
+  position: relative;
+  z-index: 1;
+}
+
+.decorativeImage {
+  text-align: center;
+  /* Tarik gambar ke atas agar menimpa gelombang */
+  margin-top: -150px; 
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.8rem;
+  }
+  .termsList {
+    font-size: 1rem;
+  }
+  .termsList li {
+    padding-left: 2.5rem;
+  }
+}

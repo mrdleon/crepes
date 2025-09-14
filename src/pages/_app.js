@@ -1,38 +1,48 @@
-// src/pages/_app.js
-
 import Layout from './components/Layout';
 import '@/styles/globals.css';
 import { Playfair_Display, Montserrat, Nunito } from 'next/font/google';
+import useSmoothScroll from '@/hooks/useSmoothScroll';
+import Head from 'next/head';
 
-// 1. Konfigurasi Playfair Display (yang hilang)
 const playfairDisplay = Playfair_Display({
   subsets: ['latin'],
   weight: ['700', '900'],
   variable: '--font-heading',
 });
-
-// 2. Konfigurasi Montserrat (yang hilang)
 const montserrat = Montserrat({
   subsets: ['latin'],
   weight: ['400', '700'],
   variable: '--font-body',
 });
-
-// 3. Konfigurasi Nunito (sudah ada)
 const nunito = Nunito({
   subsets: ['latin'],
   weight: ['700', '800', '900'],
   variable: '--font-nunito',
 });
 
+
 function MyApp({ Component, pageProps }) {
-  // Gabungkan semua variabel font ke dalam className
+  
+  useSmoothScroll();
+
   return (
-    <main className={`${playfairDisplay.variable} ${montserrat.variable} ${nunito.variable}`}>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    </main>
+    <>
+      <Head>
+        <link 
+          rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+          integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+          crossOrigin="anonymous" 
+          referrerPolicy="no-referrer" 
+        />
+      </Head>
+
+      <main className={`${playfairDisplay.variable} ${montserrat.variable} ${nunito.variable}`}>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </main>
+    </>
   );
 }
 

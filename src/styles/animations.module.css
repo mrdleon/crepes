@@ -1,0 +1,26 @@
+/* src/styles/animations.module.css */
+
+/* State awal: elemen disembunyikan */
+.hidden {
+  opacity: 0;
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* State akhir: elemen terlihat */
+.visible {
+  opacity: 1;
+  transform: translate(0, 0) !important; /* !important untuk memastikan override */
+}
+
+/* Arah animasi */
+.slideUp {
+  transform: translateY(50px); /* Mulai dari 50px di bawah */
+}
+
+.slideLeft {
+  transform: translateX(-50px); /* Mulai dari 50px di kiri */
+}
+
+.slideRight {
+  transform: translateX(50px); /* Mulai dari 50px di kanan */
+}
