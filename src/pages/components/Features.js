@@ -4,16 +4,17 @@ import styles from '@/styles/Features.module.css';
 
 const Features = () => {
   return (
+    
     <div className={styles.featuresSectionWrapper}>
       <section id="features" className={styles.featuresSection}>
         <div className={styles.contentContainer}>
-
+          
           <div className={styles.topBlock}>
             <div className={styles.bannerContainer}>
               <Image
-                src="/images/daun.png" 
+                src="/images/gabung.png" 
                 alt="Varian Produk Box Crepes"
-                width={700}
+                width={450}
                 height={300}
                 style={{ objectFit: 'cover', borderRadius: '16px' }}
               />

@@ -1,13 +1,13 @@
 .featuresSectionWrapper {
-  padding: 2rem 1rem;
+  /* padding: 2rem 1rem; */
   background-color: var(--bg-main);
 }
 .featuresSection {
-  max-width: 800px;
+  max-width: 100%;
   margin: 0 auto;
   min-height: 120vh;
   padding: 0; 
-  background-color: var(--primary-purple);
+  background-color: #8a2be2;
   position: relative;
   box-shadow: 0 20px 50px -20px rgba(138, 43, 226, 0.4);
   border-radius: 0 0 20% 20%;
@@ -20,6 +20,7 @@
   padding: 4rem 3rem;
   color: var(--text-light); 
 }
+
 
 .headline {
   font-family: 'Poppins', sans-serif;

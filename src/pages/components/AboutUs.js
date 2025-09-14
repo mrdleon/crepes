@@ -75,6 +75,15 @@ const AboutUs = () => {
               className={styles.teamImage}
             />
           </div>
+          <div className={styles.kertas}>
+            <Image
+              src="/images/kertas.png" 
+              alt="Tim Kreps Istimewa"
+              layout="fill"
+              objectFit="cover"
+              className={styles.teamImage}
+            />
+          </div>
         </div>
       </div>
 

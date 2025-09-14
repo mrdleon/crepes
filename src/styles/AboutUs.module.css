@@ -68,7 +68,7 @@
   border-radius: 16px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   position: relative;
-  margin: -10rem 10rem 0 10rem;
+  margin: -10rem 13rem 0 13rem;
   z-index: 2;
 }
 
@@ -152,7 +152,7 @@
   mask-image: linear-gradient(to bottom, transparent 0%, black 30%);
   mask-repeat: no-repeat;
   mask-size: cover;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   width: 100%;
 
 }
@@ -189,6 +189,9 @@
   }
   .title {
     font-size: 1.8rem;
+  }
+  .storyCard {
+    margin: 1rem;
   }
 
   .crepesLogoAbsolute {
