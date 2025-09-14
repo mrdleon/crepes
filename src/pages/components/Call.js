@@ -1,3 +1,5 @@
+// src/components/Call.js
+
 import React from 'react';
 import Image from 'next/image';
 import styles from '@/styles/Call.module.css';
@@ -6,33 +8,19 @@ const Call = () => {
   return (
     <section id="call" className={styles.callSection}>
       <div className={styles.container}>
-        <div className={styles.productDisplay}>
-          <div className={styles.brandLogoCircle}>
-            <Image
-              src="/images/logocrepes.jpg" 
-              alt="Logo Box Crepes"
-              width={100}
-              height={100}
-            />
-          </div>
+        {/* Gambar asli ditampilkan di sini */}
+        <div className={styles.callImage}>
           <Image
-            src="/images/anggur.png"
-            alt="Matcha Crepes"
-            width={400}
-            height={500}
-            style={{ objectFit: 'cover', borderRadius: '20px' }}
+            src="/images/ko.jpg" // Path ke gambar Anda
+            alt="Promo Box Crepes"
+            width={1200} // Lebar asli gambar
+            height={600} // Tinggi asli gambar
+            layout="responsive"
           />
         </div>
 
-        <div className={styles.persuasionBlock}>
-          <div className={styles.halalLogo}>
-            <Image
-              src="/images/halal-seeklogo.png"
-              alt="Logo Halal"
-              width={50}
-              height={90}
-            />
-          </div>
+        {/* Kontainer teks yang akan menumpuk di atas gambar */}
+        <div className={styles.textOverlay}>
           <h2 className={styles.headline}>
             GIMANA, TERTARIK ? <br /> ATAU MASIH MIKIR-MIKIR PENGEN <br /> USAHA TAPI MALES RIBET ?
           </h2>
