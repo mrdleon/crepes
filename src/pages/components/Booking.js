@@ -24,7 +24,7 @@ const Booking = () => {
         <div className={styles.waveDivider}></div>
         <div className={styles.decorativeImage}>
           <Image
-            src="/images/booking-image.png"
+            src="/images/booth.png"
             alt="Ilustrasi paket kemitraan Box Crepes"
             width={800}
             height={600}

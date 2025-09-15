@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
 :root {
   /* ===== PALET WARNA (UNGU) ===== */
   --bg-main: #FDFCF9;         
   --primary-purple: #8A2BE2; 
   --text-light: #FFFFFF;     
-  --text-dark: #3D3D3D;     
+  --text-dark: #000000;     
   
   /* Font tetap sama */
   --font-heading: 'Playfair Display', serif;

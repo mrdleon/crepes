@@ -56,7 +56,7 @@ const Hero = () => {
 
           <div className={styles.textContainer}>
             <h1 className={styles.headline}>
-              Box Crepes, Lezat dan bergiji
+              BOX CREPES <span>INDONESIA</span>
             </h1>
             <p className={styles.slogan}>
               #ManisGurihSemuaSuka<br/>
@@ -65,6 +65,9 @@ const Hero = () => {
             <div className={styles.ctaBlock}>
               <h2>PELUANG USAHA TERBAIK, TERJANGKAU & TERLARIS!!</h2>
               <div className={styles.socials}>
+                <a href="#" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>
+                  <i className="fab fa-facebook"></i>
+                </a>
                 <a href="https://instagram.com/box_crepes" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>
                   <i className="fab fa-instagram"></i> 
                 </a>

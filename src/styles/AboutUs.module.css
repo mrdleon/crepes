@@ -1,21 +1,22 @@
 .aboutSection {
   position: relative;
+  background-color: #f2bef9;
 }
 
 .aboutHeader {
   color: var(--text-light);
   position: relative;
   z-index: 1; 
-  padding: 6rem 1rem;
-  
+  padding: 16rem 1rem 6rem 1rem;
   /* ===== EFEK GRADASI YANG LEBIH SMOOTH ===== */
   background: linear-gradient(
     to bottom, 
-    rgba(138, 43, 226, 0) 0%,    /* Mulai: 100% transparan di atas */
+    rgba(138, 43, 226, 0) 0%,   /* Mulai: 100% transparan di atas*/
     rgba(138, 43, 226, 0.8) 60%,  /* Tengah: Mulai terlihat solid di 60% ke bawah */
-    var(--primary-purple) 100%   /* Akhir: 100% solid di paling bawah */
+    var(--primary-purple) 100%   /*Akhir: 100% solid di paling bawah*/
   );
-  margin-top: -30px; 
+  /* background-color: var(--primary-purple); */
+  margin-top: -60px; 
 }
 
 .headerContent {
