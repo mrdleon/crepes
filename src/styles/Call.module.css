@@ -14,8 +14,9 @@
 .callImage {
   width: 100%;
   line-height: 0;
-  /* border-radius: 20px; */
+  border-radius: 70px;
   overflow: hidden;
+  box-shadow: 0 8px 50px rgba(0, 0, 0, 0.35);
 }
 
 .textOverlay {

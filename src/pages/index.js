@@ -19,11 +19,9 @@ export default function HomePage() {
 
       <Hero /> 
 
-      <SlideIn direction="up">
-        <AboutUs />
-      </SlideIn>
+      <AboutUs />
 
-        <Features />
+      <Features />
       
       <SlideIn direction="right">
         <Call />

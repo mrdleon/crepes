@@ -1,6 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 import styles from '@/styles/AboutUs.module.css';
+import SlideIn from './SlideIn';
+
 
 const AboutUs = () => {
   return (
@@ -19,23 +21,25 @@ const AboutUs = () => {
       {/* 2. AREA KONTEN UTAMA */}
       <div className={styles.aboutContent}>
         <div className={styles.container}>
-          <div className={styles.storyCard}>
-            <div className={styles.crepesLogoAbsolute}>
-              <Image 
-                src="/images/logocrepes.jpg" 
-                alt="Logo Box Crepes"
-                width={80} 
-                height={80}
-              />
-            </div>
+          <SlideIn direction="up">
+            <div className={styles.storyCard}>
+              <div className={styles.crepesLogoAbsolute}>
+                <Image 
+                  src="/images/logocrepes.jpg" 
+                  alt="Logo Box Crepes"
+                  width={80} 
+                  height={80}
+                />
+              </div>
 
-            <p>
-              Box crepes adalah brand street food yang menyajikan berbagai varian crepes lezat dengan harga terjangkau. Berdiri sejak tahun 2023, kami hadir di kawasan strategis untuk melayani mahasiswa, karyawan, dan masyarakat umum yang mencari camilan praktis, enak, dan ramah di kantong.
-            </p>
-            <p>
-              Kami percaya bahwa makanan sederhana pun bisa memberikan kebahagiaan, selama dibuat dengan bahan berkualitas dan semangat pelayanan terbaik.
-            </p>
-          </div>
+              <p>
+                Box crepes adalah brand street food yang menyajikan berbagai varian crepes lezat dengan harga terjangkau. Berdiri sejak tahun 2023, kami hadir di kawasan strategis untuk melayani mahasiswa, karyawan, dan masyarakat umum yang mencari camilan praktis, enak, dan ramah di kantong.
+              </p>
+              <p>
+                Kami percaya bahwa makanan sederhana pun bisa memberikan kebahagiaan, selama dibuat dengan bahan berkualitas dan semangat pelayanan terbaik.
+              </p>
+            </div>
+          </SlideIn>
 
           <div className={styles.halalSection}>
             <div className={styles.halalLogo}>

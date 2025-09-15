@@ -1,6 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 import styles from '@/styles/Features.module.css';
+import SlideIn from './SlideIn';
+
 
 const Features = () => {
   return (
@@ -11,13 +13,15 @@ const Features = () => {
           
           <div className={styles.topBlock}>
             <div className={styles.bannerContainer}>
-              <Image
-                src="/images/gabung.png" 
-                alt="Varian Produk Box Crepes"
-                width={450}
-                height={300}
-                style={{ objectFit: 'cover', borderRadius: '16px' }}
-              />
+              <SlideIn direction="up">
+                <Image
+                  src="/images/gabung.png" 
+                  alt="Varian Produk Box Crepes"
+                  width={450}
+                  height={300}
+                  style={{ objectFit: 'cover', borderRadius: '16px' }}
+                />
+              </SlideIn>
               <div className={styles.halalLogo}>
                 <Image 
                   src="/images/halal-seeklogo.png"
@@ -36,13 +40,15 @@ const Features = () => {
 
           <div className={styles.bottomBlock}>
             <div className={styles.productImage}>
-              <Image
-                src="/images/maskot.png"
-                alt="Produk Unggulan Box Crepes"
-                width={650}
-                height={450}
-                style={{ objectFit: 'contain' }}
-              />
+              <SlideIn direction="left">
+                <Image
+                  src="/images/maskot.png"
+                  alt="Produk Unggulan Box Crepes"
+                  width={650}
+                  height={450}
+                  style={{ objectFit: 'contain' }}
+                />
+              </SlideIn>
             </div>
             <div className={styles.textContent}>
               <h2 className={styles.headline}>DEDIKASI KAMI UNTUK MITRA</h2>
@@ -70,13 +76,15 @@ const Features = () => {
 
         <div className={styles.productBlock}>
           <div className={styles.productImage}>
-            <Image
-              src="/images/ko.png" 
-              alt="Produk Unggulan Box Crepes"
-              width={350}
-              height={450}
-              style={{ objectFit: 'cover', borderRadius: '20px' }}
-            />
+            <SlideIn direction="left">
+              <Image
+                src="/images/ko.png" 
+                alt="Produk Unggulan Box Crepes"
+                width={350}
+                height={450}
+                style={{ objectFit: 'cover', borderRadius: '20px' }}
+              />
+            </SlideIn>
           </div>
           <div className={styles.textContent}>
             <h2 className={styles.headlineDark}>
@@ -101,13 +109,15 @@ const Features = () => {
           </div>
 
           <div className={styles.productImage}>
-            <Image
-              src="/images/booth.png" 
-              alt="Produk Unggulan Box Crepes"
-              width={350}
-              height={450}
-              style={{ objectFit: 'cover', borderRadius: '20px' }}
-            />
+            <SlideIn direction="right">
+              <Image
+                src="/images/booth.png" 
+                alt="Produk Unggulan Box Crepes"
+                width={350}
+                height={450}
+                style={{ objectFit: 'cover', borderRadius: '20px' }}
+              />
+            </SlideIn>
           </div>
         </div>
 
