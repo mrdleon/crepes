@@ -22,10 +22,10 @@ const Call = () => {
         {/* Kontainer teks yang akan menumpuk di atas gambar */}
         <div className={styles.textOverlay}>
           <h2 className={styles.headline}>
-            GIMANA, TERTARIK ? <br /> ATAU MASIH MIKIR-MIKIR PENGEN <br /> USAHA TAPI MALES RIBET ?
+            PENGEN BUKA USAHA NGGA USAH MULAI DARI NOL. <br /> SUSAH!!
           </h2>
           <h2 className={styles.headline}>
-            MAU PUNYA USAHA <br /> YANG CEPET BALIK MODAL ?
+            BOX CREPES UDAH BIKININ SISTEMNYA, TINGGAL JALAN AJA!!
           </h2>
           <h3 className={styles.subheading}>
             Segera Hubungi <br /> Admin Kami !!

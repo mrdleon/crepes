@@ -88,7 +88,7 @@ const Features = () => {
           </div>
           <div className={styles.textContent}>
             <h2 className={styles.headlineDark}>
-              SOP LENGKAP, JELAS <br /> DAN TERTATA
+              SOP LENGKAP, JELAS DAN TERTATA
             </h2>
             <p className={styles.subheadingDark}>
               Standar operasional prosedur mudah diikuti dan dijalankan.
@@ -101,7 +101,7 @@ const Features = () => {
           
           <div className={styles.textContent}>
             <h2 className={styles.headlineDark}>
-              DESIGN BOOTH YANG <br /> EYE CATCHING & MUDAH <br /> DIPINDAHKAN
+              DESIGN BOOTH YANG <br /> EYE CATCHING & MUDAH DIPINDAHKAN
             </h2>
             <p className={styles.subheadingDark}>
               Booth yang mudah dibawa kemana aja dan ringkas untuk penyimpanan barang.
