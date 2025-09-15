@@ -10,7 +10,7 @@ const Investment = () => {
           <Image src="/images/logocrepes.jpg" alt="Logo Box Crepes" width={120} height={120} />
           <div className={styles.headerText}>
             <p className={styles.tagline}>
-              Gimana masih ragu? <br/> Balik modalnya juga cepat
+              GIMANA MASIH RAGU?? <br/> BALIK MODALNYA JUGA CEPAT
             </p>
             <h1 className={styles.title}>Return Of Investment</h1>
           </div>

@@ -24,21 +24,23 @@
   
   /* Posisi di area hijau pada layar besar */
   top: 50%;
-  right: 5%;
+  right: -5%;
   transform: translateY(-50%);
-  
-  width: 45%;
+  width: 65%;
   padding: 2rem;
   text-align: left;
 }
 
 .headline {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.8rem;
-  font-weight: 700;
+  font-size: 2.8rem;
+  font-weight: 900;
   line-height: 1.3;
+  text-shadow: 6px 5px 6px rgba(0,0,0,0.51);
   margin-bottom: 2rem;
-  color: var(--text-dark);
+  color: var(--text-light);
+  -webkit-text-stroke: 1px var(--text-light);
+
 }
 
 .subheading {
@@ -68,13 +70,16 @@
   .textOverlay {
     /* Tetap absolute, tidak pindah posisi */
     width: 50%; /* Sedikit lebarkan area teks agar muat */
-    right: 2%;  /* Sedikit geser ke kiri */
-    padding: 1rem;
+    right: 8%;  /* Sedikit geser ke kiri */
+    padding: 0rem;
   }
 
   .headline {
-    font-size: 1rem; 
+    font-size: 0.8rem; 
+    letter-spacing: 0.1rem;
     margin-bottom: 1rem;
+    line-height: 1.4rem;
+    text-shadow: 3px 2px 2px #474747;
   }
   .subheading {
     font-size: 0.9rem; 

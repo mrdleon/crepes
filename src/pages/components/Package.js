@@ -25,6 +25,12 @@ const Package = () => {
           />
         </div>
       </div>
+      <div className={styles.buttonWrapper}>
+              <button className={styles.button}>
+                <div className={styles.dots_border}></div>
+                <span className={styles.text_button}>Gabung Sekarang!</span>
+              </button>
+      </div>
     </section>
   );
 };

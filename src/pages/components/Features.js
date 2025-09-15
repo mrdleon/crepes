@@ -36,6 +36,14 @@ const Features = () => {
             <p className={styles.subheading}>
               Dapatkan berbagai benefit dan free bahan baku diawal <br/>
             </p>
+            <div className={styles.buttonWrapper}>
+              <button className={styles.button}>
+                <div className={styles.dots_border}></div>
+                <span className={styles.text_button}>Gabung Sekarang!</span>
+              </button>
+            </div>
+
+
           </div>
 
           <div className={styles.bottomBlock}>

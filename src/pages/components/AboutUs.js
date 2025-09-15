@@ -25,7 +25,7 @@ const AboutUs = () => {
             <div className={styles.storyCard}>
               <div className={styles.crepesLogoAbsolute}>
                 <Image 
-                  src="/images/logocrepes.jpg" 
+                  src="/images/logocrepes1.jpg" 
                   alt="Logo Box Crepes"
                   width={80} 
                   height={80}

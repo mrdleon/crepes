@@ -28,7 +28,7 @@ const Call = () => {
             BOX CREPES UDAH BIKININ SISTEMNYA, TINGGAL JALAN AJA!!
           </h2>
           <h3 className={styles.subheading}>
-            Segera Hubungi <br /> Admin Kami !!
+            {/* Segera Hubungi <br /> Admin Kami !! */}
           </h3>
         </div>
       </div>

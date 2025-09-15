@@ -37,7 +37,7 @@ const Hero = () => {
           <div className={styles.imageAndLogoContainer}>
             <div className={styles.logoHexagon}>
               <Image
-                src="/images/logocrepes.jpg"
+                src="/images/logocrepes1.jpg"
                 alt="Logo Kreps Istimewa"
                 width={100} 
                 height={100}
@@ -45,7 +45,7 @@ const Hero = () => {
             </div>
             <div className={styles.imageHexagonWrapper}>
               <Image
-                src="/images/hero-crepes.webp"
+                src="/images/awal2.jpg"
                 alt="Aneka Varian Crepes Lezat"
                 width={500}
                 height={500}
