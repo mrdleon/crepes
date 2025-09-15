@@ -8,6 +8,7 @@ import Investment from './components/Investment';
 import Package from './components/Package';
 import Booking from './components/Booking';
 import SlideIn from './components/SlideIn';
+import Benefits from './components/Benefits';
 
 export default function HomePage() {
   return (
@@ -25,6 +26,10 @@ export default function HomePage() {
       
       <SlideIn direction="right">
         <Call />
+      </SlideIn>
+
+      <SlideIn direction="up">
+        <Benefits />
       </SlideIn>
       
       <SlideIn direction="up">

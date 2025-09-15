@@ -7,8 +7,13 @@ const Investment = () => {
     <section id="investment" className={styles.investmentSection}>
       <div className={styles.container}>
         <header className={styles.header}>
-          <Image src="/images/logocrepes.jpg" alt="Logo Box Crepes" width={80} height={80} />
-          <h1 className={styles.title}>Return Of Investment</h1>
+          <Image src="/images/logocrepes.jpg" alt="Logo Box Crepes" width={120} height={120} />
+          <div className={styles.headerText}>
+            <p className={styles.tagline}>
+              Gimana masih ragu? <br/> Balik modalnya juga cepat
+            </p>
+            <h1 className={styles.title}>Return Of Investment</h1>
+          </div>
         </header>
 
         <div className={styles.tableWrapper}>
@@ -67,3 +72,4 @@ const Investment = () => {
 };
 
 export default Investment;
+
